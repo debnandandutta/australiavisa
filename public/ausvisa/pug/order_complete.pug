@@ -1,0 +1,235 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header.header-style2.pink
+			.top-nav.top-nav-style2
+				.azir-container
+					.row.align-items-center
+						.col-12.col-lg-6
+							.top-nav_left
+								p.notification Welcome to New York Office
+						.col-12.col-lg-6
+							.top-nav_right.text-lg-right 
+								.language.inline-block
+									a(href="#").select
+										.flag.inline-block
+											img(src="assets/images/homepage1/flag.png", alt="flag")
+										|English
+									.options-box
+										ul
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Vietnamese
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Chinese
+								.social.inline-block
+									span Follow:
+									a(href="https://www.facebook.com/").fab.fa-facebook-f
+									a(href="https://twitter.com/").fab.fa-twitter
+									a(href="https://www.invisionapp.com/").fab.fa-invision
+			.header
+				.header-middle
+					.azir-container
+						.row.align-items-center
+							.col-11.col-lg-3
+								a(href="index.html").logo
+									img(src="assets/images/logo-pink-2.png", alt="logo")
+							.col-1.col-lg-9
+								.website-info
+									.info-block
+										.info-icon
+											i.fas.fa-phone-alt
+										.info-content
+											p.light-title Call us:
+											h6.main-title 001-1234-8888
+									.info-block
+										.info-icon
+											i.fas.fa-map-marker-alt
+										.info-content
+											p.light-title Office Address:
+											h6.main-title 350 5th Ave, New York
+									.info-block
+										.info-icon
+											i.far.fa-clock
+										.info-content
+											p.light-title Open Time:
+											h6.main-title Mon-Fri: 08:00 - 19:00
+				.header-bottom
+					.azir-container
+						.row.align-items-center.justify-content-end
+							.col-1.col-lg-8
+								.navigation
+									ul
+										li.navigtion-item
+											a.navigation-link(href="index.html") Home
+											i.submenu-opener
+											.dropdown_menu
+												include base/homepages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") About
+											i.submenu-opener
+											.dropdown_menu
+												include base/about_links.pug
+										li.navigtion-item
+											a.navigation-link(href="services_1.html") Services
+											i.submenu-opener
+											.dropdown_menu
+												include base/services_links.pug
+										li.navigtion-item
+											a.navigation-link(href="case_studies.html") Case Studies
+											i.submenu-opener
+											.dropdown_menu
+												include base/case_study_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") Insight
+											i.submenu-opener
+											.dropdown_menu
+												include base/insights_links.pug
+										li.navigtion-item.active
+											a.navigation-link(href="#") Pages
+											i.submenu-opener
+											.dropdown_menu
+												include base/pages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="contact.html") Contact
+							.col-11.col-lg-4
+								.page-function_block.d-flex.align-items-center.justify-content-end
+									.page-function
+										.function-btn.inline-block
+											a(href="#")#search
+												i.icon_search
+										.function-btn.inline-block
+											a(href="#")#cart
+												i.icon_bag_alt
+										.function-btn.inline-block
+											a(href="#")#open-menu-sidebar
+												i.icon_menu
+									a.btn.btn-pink(href="services_1.html") Get a quote
+		section.shop
+			.azir-container
+				.page-header.text-center
+					h1.h1 Order Completed
+					.bread-crumb
+						a(href="index.html").bread-crumb__link.prv-page Home
+						a(href="#").bread-crumb__link.prv-page Pages
+						a(href="shop.html").bread-crumb__link.crt-page Shop
+				.row.no-gutters
+					.col-12
+						.order-complete
+							.row
+								.col-12.col-md-7
+									.order_status
+										h5.order-complete--title Your order has been received
+										p.order_status__item Order number
+											span 188
+										p.order_status__item Date
+											span 13 May 2019
+										p.order_status__item Total
+											span $199.00
+										p.order_status__item Payment method
+											span Check payments
+								.col-12.col-md-5
+									.order_detail
+										h5.order-complete--title Order Details
+										table
+											colgroup
+												col(span="1", style="width: 60%")
+												col(span="1", style="width: 40%")
+											thead
+												tr
+													th.text-left Product
+													th.text-right Price
+											tbody
+												tr
+													td.text-left.product-name Selling Away Game x1
+													td.text-right.product-price $30.00
+												tr
+													td.text-left.product-name The Greatest Life x 3
+													td.text-right.product-price $40.00
+												tr
+													td.text-left.cart-subtotal Cart Subtotal
+													td.text-right.cart-subtotal--price $70.00
+												tr
+													td.text-left.payment Payment method
+													td.text-right.payment-method Check payments
+												tr
+													td.text-left.total Total
+													td.text-right.total--price $70.00
+												tr
+													td.text-left.note Note
+													td.text-right.note--content No
+		section.partners
+			.azir-container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer.pink
+			.footer-top
+				.azir-container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo-pink-2.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-pink Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.azir-container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+		include base/footer_links.pug

@@ -1,0 +1,360 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header.header-style5
+			.header
+				.azir-container-full-fluid
+					.row.no-gutters.align-items-center
+						.col-12.col-lg-8.col-xxl-7.col-xxxl-6.order-lg-2.order-xxxl-1
+							.navigation
+								ul
+									li.navigtion-item.active
+										a.navigation-link(href="index.html") Home
+										i.submenu-opener
+										.dropdown_menu
+											include base/homepages_links.pug
+									li.navigtion-item
+										a.navigation-link(href="about.html") About
+										i.submenu-opener
+										.dropdown_menu
+											include base/about_links.pug
+									li.navigtion-item
+										a.navigation-link(href="services_1.html") Services
+										i.submenu-opener
+										.dropdown_menu
+											include base/services_links.pug
+									li.navigtion-item
+										a.navigation-link(href="case_studies.html") Case Studies
+										i.submenu-opener
+										.dropdown_menu
+											include base/case_study_links.pug
+									li.navigtion-item
+										a.navigation-link(href="about.html") Insight
+										i.submenu-opener
+										.dropdown_menu
+											include base/insights_links.pug
+									li.navigtion-item
+										a.navigation-link(href="#") Pages
+										i.submenu-opener
+										.dropdown_menu
+											include base/pages_links.pug
+									li.navigtion-item
+										a.navigation-link(href="contact.html") Contact
+						.col-6.col-lg-2.col-xxl-2.col-xxxl-2.order-lg-1.order-xxxl-2
+							a(href="index.html").logo
+								img(src="assets/images/logo-blue-green.png", alt="logo")
+						.col-6.col-lg-2.col-xxl-3.col-xxxl-4.order-lg-3.order-xxxl-3
+							.h5-page-function-block
+								p.contact Call Us: 
+									span 001-1234-88888
+								.page-function.text-right
+									.function-btn_block
+										.function-btn.inline-block
+											a(href="#")#search
+												i.icon_search
+										.function-btn.inline-block
+											a(href="cart.html")#cart
+												i.icon_bag_alt
+										.function-btn.nav-bar.inline-block
+											a(href="#")#open-menu-sidebar
+												i.icon_menu
+									a.btn.btn-blue-green(href="services_1.html") Get a quote
+		section.h5-banner
+			.container
+				.row.align-items-center.justify-content-between
+					.col-12
+						.banner-content
+							h1.heading.banner-title.font-light.animated.fadeInDown(style="animation-delay: 0.5s") Global Business
+							p.p.banner-paragraph.animated.fadeInDown(style="animation-delay:0.9s") We work with you to transform your organization, driving bold ideas and pragmatic solutions.
+							.banner-video.animated.fadeInDown(style="animation-delay: 1.3s")
+								a(href="#").d-flex.align-items-center
+									.video-btn
+										i.fas.fa-play.inline-block
+									p.inline-block How we work						
+		section.h5-section3
+			.container
+				.row
+					.col-12
+						.section-header-style-2.text-center
+							h1.h1.font-light We are help you to <br> Grow your Business
+							p.p We work with you to transform your organization, driving bold ideas and pragmatic solutions.
+					.col-12
+						.benefit-detail(data-aos="fade-up")
+							.row
+								.col-12.col-sm-6.col-md-3
+									.benefit-detail_group
+										.benefit-icon
+											i.az-icon-1
+										.benefit-content
+											h5.h5.benefit-content--title Strategy
+											p.p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+								.col-12.col-sm-6.col-md-3
+									.benefit-detail_group
+										.benefit-icon
+											i.az-icon-9
+										.benefit-content
+											h5.h5.benefit-content--title Taxes
+											p.p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+								.col-12.col-sm-6.col-md-3
+									.benefit-detail_group
+										.benefit-icon
+											i.az-icon-6
+										.benefit-content
+											h5.h5.benefit-content--title Restructuring
+											p.p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+								.col-12.col-sm-6.col-md-3
+									.benefit-detail_group
+										.benefit-icon
+											i.az-icon-8
+										.benefit-content
+											h5.h5.benefit-content--title Restructuring
+											p.p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+		section.h5-section1
+			.container
+				.row.justify-content-between.align-items-center
+					.col-12.col-md-9
+						q.h5-section1_quote "We live to get things done. We are much more go than show. We’re allabout making it count for clients."
+					.col-12
+						.layout-2col-ti
+							.row.justify-content-between
+								.col-12.col-md-7.col-lg-5
+									.layout-2col-ti_left
+										#tabs(data-aos="fade-right")
+											ul
+												li
+													a(href='#tabs-1') Our Mission
+												li
+													a(href='#tabs-2') Our Vision 
+												li
+													a(href='#tabs-3') Our Values
+											#tabs-1
+												p For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+												p Tailored solutions that deliver results and achieve sustained growth
+											#tabs-2
+												p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita perferendis porro aliquam dolorem inventore fuga deleniti corporis quaerat quis vero, recusandae laboriosam qui maiores blanditiis minus corrupti ipsum possimus accusantium.
+											#tabs-3
+												p Sit amet, consectetur adipisicing elit. Expedita perferendis porro aliquam dolorem inventore fuga deleniti corporis quaerat quis vero, recusandae laboriosam qui maiores blanditiis minus corrupti ipsum possimus accusantium.
+								.col-12.col-md-5.col-lg-6
+									.layout-2col-ti_right
+										img.img-fluid(src="assets/images/homepage5/illus.svg", alt="illustration", data-aos="fade-left")
+		section.h5-section2
+			.container
+				.data-proof
+					.row
+						.col-6.col-md-3
+							.data-group.text-center.mb30-md
+								.data-icon
+									i.az-icon-10
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='2009' data-delay='5' data-increment='5') 2009
+									h5.data-type.h5 Company Established
+						.col-6.col-md-3
+							.data-group.text-center.mb30-md
+								.data-icon
+									i.az-icon-11
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='635' data-delay='5' data-increment='5') 635
+									h5.data-type.h5 Project Done
+						.col-6.col-md-3
+							.data-group.text-center
+								.data-icon
+									i.az-icon-12
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='20' data-delay='2' data-increment='3') 20
+										span +
+									h5.data-type.h5 Business Parners
+						.col-6.col-md-3
+							.data-group.text-center
+								.data-icon
+									i.az-icon-13
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='1920' data-delay='5' data-increment='5') 1920
+									h5.data-type.h5 Happy Clients
+		section.call-to-action.bg-blue-green
+			.container
+				.row.justify-content-between.align-items-center
+					.col-12.col-lg-9
+						.call-to-action_content.text-center.text-lg-left
+							h3.h3.cta-title.font-light Would you like to speak to one of our financial advisers?
+							p.p.cta-pragraph Just submit your contact details and we’ll be in touch shortly. 
+					.col-12.col-lg-3.text-lg-right.text-center
+						a(href="services_1.html").cta-btn.btn-white Get A Quote
+		section.h5-section4
+			.container
+				.row.align-items-center.justify-content-between
+					.col-12.col-md-6.col-lg-5
+						.h4-section4_introduction(data-aos="fade-left")
+							h1.h1.font-light WP Theme for Consulting!
+							p.p Your business is in a continual battle for your customers’ recognition whether you know it or not.
+							ul
+								li Act with Honesty and Integrity
+								li Constantly Focus on Safety and Quality
+								li Provide Professional and Technical Excellence
+								li Promote a Cooperative Team Environment
+								li Cultivate Long-Term Relationships with our clients
+					.col-12.col-md-6
+						img.img-fluid(src="assets/images/homepage5/illus-2.svg", alt="illustration", data-aos="fade-right")
+		section.h5-section5
+			.container
+				.row.justify-content-between.align-items-center
+					.col-12.col-md-6.col-lg-5
+						.quick-contact.quick-contact_h3
+							.row.justify-content-between
+								.col-12
+									.quick-contact_left
+										h1.h1.font-light Request a call back.
+										.input-group
+											label(for="jobs") Speak to our experts in:
+											select#jobs.blue-green(name="jobs")
+												option(value="Deer") Deer
+												option(value="Creative") Creative
+												option(value="Creative" selected disabled hidden) Select an industry
+								.col-12
+									.quick-contact_right
+										input.input-form(type="text" placeholder="First name" required)
+										input.input-form(type="text" placeholder="Last name" required)
+										button.btn-blue-green Submit
+					.col-12.col-md-6.col-lg-6
+						.h2-section3
+							.counselor-wrapper
+								.counselor-block
+									.counselor
+										img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+										.counselor-detail
+											h5 Maud Salazar
+											p CEO DEERCREATIVE
+									q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+								.counselor-block
+									.counselor
+										img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+										.counselor-detail
+											h5 Maud Salazar
+											p CEO DEERCREATIVE
+									q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+								.counselor-block
+									.counselor
+										img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+										.counselor-detail
+											h5 Maud Salazar
+											p CEO DEERCREATIVE
+									q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+							.counselor_slider-control
+		section.h3-lastest-insight.h5-lastest-insight(data-aos="fade-in", data-aos-offset="-400", data-aos-duration="1500")
+			.container
+				.row
+					.col-12.text-center
+						.section-header-style-1.text-center
+							h1.h1.font-light Our Latest Insights
+					.col-12
+						.insights-group(data-slick='{"slidesToShow": 4}')
+							.insight-regular
+								.insight-img
+									img(src="assets/images/homepage3/insight-1.png", alt="insights image")
+									p.date 26 Nov 2019
+								.insight-content
+									a(href="blog_detail.html") PA Consulting patent paves way for Point of Care testing
+									p.author by
+										span Admin
+							.insight-regular
+								.insight-img
+									img(src="assets/images/homepage3/insight-2.png", alt="insights image")
+									p.date 26 Nov 2019
+								.insight-content
+									a(href="blog_detail.html") Executive benefits firm Capacuity hires senior consultant, CTO
+									p.author by
+										span Admin
+							.insight-regular
+								.insight-img
+									img(src="assets/images/homepage3/insight-3.png", alt="insights image")
+									p.date 26 Nov 2019
+								.insight-content
+									a(href="blog_detail.html") Energy consultancy Opportune adds Shaun Ahn as managing director
+									p.author by
+										span Admin
+							.insight-regular
+								.insight-img
+									img(src="assets/images/homepage3/insight-1.png", alt="insights image")
+									p.date 26 Nov 2019
+								.insight-content
+									a(href="blog_detail.html") US financial market M&A saw slow pace as industry took a breath
+									p.author by
+										span Admin
+							.insight-regular
+								.insight-img
+									img(src="assets/images/homepage3/insight-1.png", alt="insights image")
+									p.date 26 Nov 2019
+								.insight-content
+									a(href="blog_detail.html") Marketing consultancy Digital Decisions hires Peter Hanford
+									p.author by
+										span Admin
+		section.partners
+			.container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer.blue-green
+			.footer-top
+				.container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo-blue-green.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-blue-green Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+
+		include base/footer_links.pug

@@ -1,0 +1,366 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header
+			.top-nav
+				.azir-container
+					.row.align-items-center
+						.col-12.col-lg-6
+							.top-nav_left
+								.top-nav_left--content.email.inline-block
+									i.fas.fa-envelope
+									| hi.azir@gmail.coms
+								.top-nav_left--content.phone.inline-block
+									i.fas.fa-phone-alt
+									| 001-1234-88888
+						.col-12.col-lg-6
+							.top-nav_right.text-lg-right 
+								.language.inline-block
+									a(href="#").select
+										.flag.inline-block
+											img(src="assets/images/homepage1/flag.png", alt="flag")
+										|English
+									.options-box
+										ul
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Vietnamese
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Chinese
+								.office.inline-block
+									a(href="#").select New York Office
+									.options-box
+										ul
+											li
+												a(href="#").select.option Vietnam Office
+											li
+												a(href="#").select.option Italy Office
+								.social.inline-block
+									a(href="https://www.facebook.com/").fab.fa-facebook-f
+									a(href="https://twitter.com/").fab.fa-twitter
+									a(href="https://www.invisionapp.com/").fab.fa-invision
+			.header
+				.azir-container
+					.row.align-items-center
+						.col-6.order-1.col-lg-2
+							a(href="index.html").logo
+								img(src="assets/images/logo.png", alt="logo")
+						.col-12.order-3.order-lg-2.col-lg-8
+							.navigation.text-right
+								ul
+									li.navigtion-item.active
+										a.navigation-link(href="index.html") Home
+										i.submenu-opener
+										.dropdown_menu
+											include base/homepages_links.pug
+									li.navigtion-item
+										a.navigation-link(href="about.html") About
+										i.submenu-opener
+										.dropdown_menu
+											include base/about_links.pug
+									li.navigtion-item
+										a.navigation-link(href="services_1.html") Services
+										i.submenu-opener
+										.dropdown_menu
+											include base/services_links.pug
+									li.navigtion-item
+										a.navigation-link(href="case_studies.html") Case Studies
+										i.submenu-opener
+										.dropdown_menu
+											include base/case_study_links.pug
+									li.navigtion-item
+										a.navigation-link(href="about.html") Insight
+										i.submenu-opener
+										.dropdown_menu
+											include base/insights_links.pug
+									li.navigtion-item
+										a.navigation-link(href="#") Pages
+										i.submenu-opener
+										.dropdown_menu
+											include base/pages_links.pug
+									li.navigtion-item
+										a.navigation-link(href="contact.html") Contact
+						.col-6.order-2.order-lg-3.col-lg-2
+							.page-function.text-right
+								.function-btn.inline-block
+									a(href="#")#search
+										i.icon_search
+								.function-btn.inline-block
+									a(href="#")#cart
+										i.icon_bag_alt
+								.function-btn.nav-bar.inline-block
+									a(href="#")#open-menu-sidebar
+										i.icon_menu
+		section.h1-banner
+			.azir-container
+				.row.align-items-center
+					.col-12.col-sm-8.col-md-7
+						.banner-content
+							h1.heading.banner-title.animated.fadeInLeft Strategic Advisors For The Digital Economy
+							p.p.banner-paragraph.animated.fadeInLeft We live to get things done. We are much more go than show. We’re all about making it count for clients.
+							.banner-btn-group.d-flex.align-items-center.animated.fadeInLeft
+								a(href="services_1.html").banner-qoute Get A Quote
+								.banner-video
+									a(href="#").d-flex.align-items-center
+										.video-btn
+											i.fas.fa-play.inline-block
+										p.inline-block How we work
+		section.h1-section1
+			.azir-container
+				.row.justify-content-between
+					.col-12.col-md-6
+						.h1-section1_benefit
+							.section-header-style-2.text-center.text-md-left
+								h1.h1 We are help you to <br> Grow your Business
+								p.p We work with you to transform your organization, driving bold ideas and pragmatic solutions.
+							.benefit-detail
+								.benefit-detail_group
+									.benefit-icon
+										img(src="assets/images/homepage1/icon-1.svg", alt="icon")
+									.benefit-content
+										h5.h5.benefit-content--title Strategy
+										p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+								.benefit-detail_group
+									.benefit-icon
+										img(src="assets/images/homepage1/icon-2.svg", alt="icon")
+									.benefit-content
+										h5.h5.benefit-content--title Taxes
+										p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+								.benefit-detail_group
+									.benefit-icon
+										img(src="assets/images/homepage1/icon-3.svg", alt="icon")
+									.benefit-content
+										h5.h5.benefit-content--title Restructuring
+										p.benefit-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+					.col-12.col-md-6.col-lg-5
+						.h1-section-1_industry(data-aos="fade-up", data-aos-offset="300",  data-aos-duration="1000")
+							h3.h3 What is your industry?
+							.industry-links
+								ul
+									li
+										a.industry-link(href="services_detail_1.html") Business Transformation & Advisory
+									li
+										a.industry-link(href="services_detail_1.html") Turnaround, Stability & Restructuring Services
+									li
+										a.industry-link(href="services_detail_1.html") Transactions
+									li
+										a.industry-link(href="services_detail_1.html") Valuation & Financial Advisory Services
+									li
+										a.industry-link(href="services_detail_1.html") Dispute Advisory
+									li
+										a.industry-link(href="services_detail_1.html") Tax Services
+									li
+										a.industry-link(href="services_detail_1.html") Healthcare
+									li
+										a.industry-link(href="services_detail_1.html") Financial Services
+									li
+										a.industry-link(href="services_detail_1.html") Technology
+									li
+										a.industry-link(href="services_detail_1.html") Automotive
+									li
+										a.industry-link(href="services_detail_1.html") Oil & Gas
+							a(href="services_1.html").all-industries All Industries
+		section.call-to-action
+			.azir-container
+				.row.justify-content-between.align-items-center
+					.col-12.col-lg-9
+						.call-to-action_content.text-center.text-lg-left
+							h3.h3.cta-title Would you like to speak to one of our financial advisers?
+							p.p.cta-pragraph Just submit your contact details and we’ll be in touch shortly. 
+					.col-12.col-lg-3.text-lg-right.text-center
+						a(href="services_1.html").cta-btn.btn-red Get A Quote
+		section.h1-section2
+			.azir-container
+				.welcome-block
+					.layout-2col-ti
+						.row.justify-content-between
+							.col-12.col-lg-6
+								.layout-2col-ti_left
+									.welcome-block_img(data-aos="fade-left",  data-aos-duration="1000")
+										img(src="assets/images/homepage1/il-1.svg", alt="Welcome")
+							.col-12.col-lg-5
+								.layout-2col-ti_right
+									.welcome-block_content(data-aos="fade-right",  data-aos-duration="1000")
+										.section-header-style-3.text-center.text-lg-left
+											h1.h1 Welcome to Azir
+											h6.h6 "We’re passionate about making a measurable impact in all we do."
+											p.p For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+											a(href="about.html").btn-outline-red About us
+			.data-proof
+				.azir-container
+					.section-header-style-1.text-center
+						h1.h1 Let the numbers speak!
+					.row
+						.col-6.col-md-3
+							.data-group.text-center.mb30-md
+								.data-icon
+									i.az-icon-10
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='2009' data-delay='5' data-increment='5') 2009
+									h5.data-type.h5 Company Established
+						.col-6.col-md-3
+							.data-group.text-center.mb30-md
+								.data-icon
+									i.az-icon-11
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='635' data-delay='5' data-increment='5') 635
+									h5.data-type.h5 Project Done
+						.col-6.col-md-3
+							.data-group.text-center
+								.data-icon
+									i.az-icon-12
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='20' data-delay='2' data-increment='3') 20
+										span +
+									h5.data-type.h5 Business Parners
+						.col-6.col-md-3
+							.data-group.text-center
+								.data-icon
+									i.az-icon-13
+								.data-content
+									h1.data-number.heading.numscroller(data-min='1' data-max='1920' data-delay='5' data-increment='5') 1920
+									h5.data-type.h5 Happy Clients
+		section.h1-lastest-insight(data-aos="fade-in",  data-aos-duration="1000")
+			.azir-container
+				.h1-lastest-insight_top
+					h1.h1 Our Latest Insights
+					a(href="blog_default.html") View all Blog
+				.lastest-insights
+					.row
+						.col-12.col-md-6
+							.feature-lastest-insights
+								a(href="blog_detail.html").feature-lastest-insights_img
+									img(src="assets/images/homepage1/insight.png", alt="lastest insights image")
+								.feature-lastest-insights_content
+									h5.insight-tag Consulting
+									a(href="blog_detail.html").insight-title Year in Review: Healthcare Megadeals Lead the Way
+									.insight-public-date
+										p.inline-block.author Amin
+										p.inline-block.date 26 Nov 2019
+						.col-12.col-md-6
+							.list-lastest-insights_group
+								.list-lastest-insight
+									.list-lastest-insight_content
+										a(href="blog_detail.html").list-insight--title How Commodity Producers Can Raise Their 
+										.insight-public-date
+											p.inline-block.author Amin
+											p.inline-block.date 26 Nov 2019
+								.list-lastest-insight
+									.list-lastest-insight_content
+										a(href="blog_detail.html").list-insight--title Micro-battles and Building New Businesses
+										.insight-public-date
+											p.inline-block.author Amin
+											p.inline-block.date 26 Nov 2019
+								.list-lastest-insight
+									.list-lastest-insight_content
+										a(href="blog_detail.html").list-insight--title 4 Questions Retailers Need to Ask About Augmented Reality
+										.insight-public-date
+											p.inline-block.author Amin
+											p.inline-block.date 26 Nov 2019
+								.list-lastest-insight
+									.list-lastest-insight_content
+										a(href="blog_detail.html").list-insight--title Consumer Products: Now’s the Time to Double Down on China
+										.insight-public-date
+											p.inline-block.author Amin
+											p.inline-block.date 26 Nov 2019
+								.list-lastest-insight
+									.list-lastest-insight_content
+										a(href="blog_detail.html").list-insight--title Micro-battles and Building New Businesses
+										.insight-public-date
+											p.inline-block.author Amin
+											p.inline-block.date 26 Nov 2019
+		section.quick-contact.quick-contact_h1(data-aos="zoom-in-up",  data-aos-duration="1000")
+			.azir-container
+				form(method="POST")
+					.row.justify-content-between
+						.col-12.col-md-5
+							.quick-contact_left
+								h1.h1 Want to continue the conversation?
+								.input-group
+									label(for="jobs") Speak to our experts
+									select#jobs(name="jobs")
+										option(value="Deer") Deer
+										option(value="Creative") Creative
+										option(value="Creative" selected disabled hidden) Select an industry
+						.col-12.col-md-6
+							.quick-contact_right
+								p.p We help global leaders with their organization's most critical issues and opportunities. Together, we create enduring change and results.
+								.input-group
+									input.input-form.mb-0(type="text" placeholder="Your e-mail address")
+									button.btn-red Contact
+		section.partners
+			.azir-container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer
+			.footer-top
+				.azir-container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-red Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.azir-container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+
+		include base/footer_links.pug

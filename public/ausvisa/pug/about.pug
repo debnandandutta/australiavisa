@@ -1,0 +1,385 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header.header-style2.pink
+			.top-nav.top-nav-style2
+				.azir-container
+					.row.align-items-center
+						.col-12.col-lg-6
+							.top-nav_left
+								p.notification Welcome to New York Office
+						.col-12.col-lg-6
+							.top-nav_right.text-lg-right 
+								.language.inline-block
+									a(href="#").select
+										.flag.inline-block
+											img(src="assets/images/homepage1/flag.png", alt="flag")
+										|English
+									.options-box
+										ul
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Vietnamese
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Chinese
+								.social.inline-block
+									span Follow:
+									a(href="https://www.facebook.com/").fab.fa-facebook-f
+									a(href="https://twitter.com/").fab.fa-twitter
+									a(href="https://www.invisionapp.com/").fab.fa-invision
+			.header
+				.header-middle
+					.azir-container
+						.row.align-items-center
+							.col-11.col-lg-3
+								a(href="index.html").logo
+									img(src="assets/images/logo-pink-2.png", alt="logo")
+							.col-1.col-lg-9
+								.website-info
+									.info-block
+										.info-icon
+											i.fas.fa-phone-alt
+										.info-content
+											p.light-title Call us:
+											h6.main-title 001-1234-8888
+									.info-block
+										.info-icon
+											i.fas.fa-map-marker-alt
+										.info-content
+											p.light-title Office Address:
+											h6.main-title 350 5th Ave, New York
+									.info-block
+										.info-icon
+											i.far.fa-clock
+										.info-content
+											p.light-title Open Time:
+											h6.main-title Mon-Fri: 08:00 - 19:00
+				.header-bottom
+					.azir-container
+						.row.align-items-center.justify-content-end
+							.col-1.col-lg-8
+								.navigation
+									ul
+										li.navigtion-item
+											a.navigation-link(href="index.html") Home
+											i.submenu-opener
+											.dropdown_menu
+												include base/homepages_links.pug
+										li.navigtion-item.active
+											a.navigation-link.active(href="about.html") About
+											i.submenu-opener
+											.dropdown_menu
+												include base/about_links.pug
+										li.navigtion-item
+											a.navigation-link(href="services_1.html") Services
+											i.submenu-opener
+											.dropdown_menu
+												include base/services_links.pug
+										li.navigtion-item
+											a.navigation-link(href="case_studies.html") Case Studies
+											i.submenu-opener
+											.dropdown_menu
+												include base/case_study_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") Insight
+											i.submenu-opener
+											.dropdown_menu
+												include base/insights_links.pug
+										li.navigtion-item
+											a.navigation-link(href="#") Pages
+											i.submenu-opener
+											.dropdown_menu
+												include base/pages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="contact.html") Contact
+							.col-11.col-lg-4
+								.page-function_block.d-flex.align-items-center.justify-content-end
+									.page-function
+										.function-btn.inline-block
+											a(href="#")#search
+												i.icon_search
+										.function-btn.inline-block
+											a(href="#")#cart
+												i.icon_bag_alt
+										.function-btn.inline-block
+											a(href="#")#open-menu-sidebar
+												i.icon_menu
+									a.btn.btn-pink(href="services_1.html") Get a quote
+		section.about
+			.azir-container
+				.page-header.text-center
+					h1.h1 Services
+					.bread-crumb
+						a(href="index.html").bread-crumb__link.prv-page About Us
+						a(href="").bread-crumb__link.crt-page About
+				.row
+					.col-12
+						.about-content
+							.about-part.experience-part
+								.row.align-items-center
+									.col-12.col-md-6
+										.section-header-style-3
+											h1.h1 30 Years of Experience
+											h6.h6 "We’re passionate about making a measurable impact in all we do."
+											p.p For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+											a(href="contact.html").btn-pink Contact us
+									.col-12.col-md-6
+										.chart
+											<canvas id="myChart" width="400" height="250"></canvas>
+			.about-part.data-part
+				.h1-section2 
+					.data-proof
+						.azir-container
+							.row
+								.col-6.col-sm-3
+									.data-group.text-center.mb30-md
+										.data-icon
+											i.az-icon-10
+										.data-content
+											h1.data-number.heading.numscroller(data-min='1' data-max='2009' data-delay='5' data-increment='5') 2009
+											h5.data-type.h5 Company Established
+								.col-6.col-sm-3
+									.data-group.text-center.mb30-md
+										.data-icon
+											i.az-icon-11
+										.data-content
+											h1.data-number.heading.numscroller(data-min='1' data-max='635' data-delay='5' data-increment='5') 635
+											h5.data-type.h5 Project Done
+								.col-6.col-sm-3
+									.data-group.text-center
+										.data-icon
+											i.az-icon-12
+										.data-content
+											h1.data-number.heading.numscroller(data-min='1' data-max='20' data-delay='2' data-increment='3') 20
+												span +
+											h5.data-type.h5 Business Parners
+								.col-6.col-sm-3
+									.data-group.text-center
+										.data-icon
+											i.az-icon-13
+										.data-content
+											h1.data-number.heading.numscroller(data-min='1' data-max='1920' data-delay='5' data-increment='5') 1920
+											h5.data-type.h5 Happy Clients
+			.azir-container
+				.about-content
+					.about-part.our-job-part
+						.section-header-style-2.text-center
+							h1.h1 We are help you to <br> Grow your Business
+							p.p We work with you to transform your organization, driving bold ideas and pragmatic solutions.
+						.our-job-part_services.services
+							.services-group-style2
+								.service_block
+									.service-icon
+										i.az-icon-1
+									.service-content
+										h5.h5.service-content--title Strategy
+										p.p.h5.service-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+										a(href="services_detail_1.html") Read more
+								.service_block
+									.service-icon
+										i.az-icon-2
+									.service-content
+										h5.h5.service-content--title Taxes
+										p.p.h5.service-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+										a(href="services_detail_1.html") Read more
+								.service_block
+									.service-icon
+										i.az-icon-3
+									.service-content
+										h5.h5.service-content--title Restructuring
+										p.p.h5.service-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+										a(href="services_detail_1.html") Read more
+								.service_block
+									.service-icon
+										i.az-icon-4
+									.service-content
+										h5.h5.service-content--title Consumer Markets
+										p.p.h5.service-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+										a(href="services_detail_1.html") Read more
+								.service_block
+									.service-icon
+										i.az-icon-5
+									.service-content
+										h5.h5.service-content--title Financial Services
+										p.p.h5.service-content--pragraph Tailored solutions that deliver results and achieve sustained growth
+										a(href="services_detail_1.html") Read more
+							.services-group_control.text-center
+		section.call-to-action
+			.azir-container
+				.row.justify-content-between.align-items-center
+					.col-12.col-lg-9
+						.call-to-action_content.text-center.text-lg-left
+							h3.h3.cta-title Would you like to speak to one of our financial advisers?
+							p.p.cta-pragraph Just submit your contact details and we’ll be in touch shortly. 
+					.col-12.col-lg-3.text-lg-right.text-center
+						a(href="services_1.html").cta-btn.btn-pink Get A Quote
+		section#timeline
+			.section-header-style-1.text-center
+				h1.h1 Our history company
+			.demo-card-wrapper
+				.demo-card.demo-card--step1
+					p.date 11 Dec 1980
+					.head
+						h5 Start Up Company
+					.body
+						img(src='assets/images/about/timeline-1.png' alt='card image')
+						p.p-16 The most important visual element, it is recommended that it is given its due importance.
+				.demo-card.demo-card--step2
+					p.date 20 Jun 1998
+					.head
+						h5 Award For Seo Excellence
+					.body
+						img(src='assets/images/about/timeline-2.png' alt='card image')
+						p.p-16 The most important visual element, it is recommended that it is given its due importance.
+				.demo-card.demo-card--step3
+					p.date 11 Dec 2012
+					.head
+						h5 Open more branches
+					.body
+						img(src='assets/images/about/timeline-3.png' alt='card image')
+						p.p-16 The most important visual element, it is recommended that it is given its due importance.
+				.demo-card.demo-card--step4
+					p.date 20 Jun 2016
+					.head
+						h5 Influential woman in seo
+					.body
+						img(src='assets/images/about/timeline-4.png' alt='card image')
+						p.p-16 The most important visual element, it is recommended that it is given its due importance.
+				.demo-card.demo-card--step5
+					p.date 10 Jul 2019
+					.head
+						h5 Today
+					.body
+						img(src='assets/images/about/timeline-5.png' alt='card image')
+						p.p-16 The most important visual element, it is recommended that it is given its due importance.
+		section.quick-contact.quick-contact_h2.mb-100
+			.azir-container
+				form(method="POST")
+					.row.justify-content-between
+						.col-12.col-md-5
+							.quick-contact_left
+								h1.h1 Request a call back.
+								.input-group
+									label(for="jobs") Speak to our experts
+									select#jobs.pink(name="jobs")
+										option(value="Deer") Deer
+										option(value="Creative") Creative
+										option(value="Creative" selected disabled hidden) Select an industry
+						.col-12.col-md-6
+							.quick-contact_right
+								input.input-form(type="text" placeholder="First name" required)
+								input.input-form(type="text" placeholder="Last name" required)
+								button.btn-pink Submit
+		section.partners
+			.azir-container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer.pink
+			.footer-top
+				.azir-container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo-pink-2.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-pink Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.azir-container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+		include base/footer_links.pug
+		script.
+			var ctx = document.getElementById('myChart');
+			var myChart = new Chart(ctx, {
+			    type: 'bar',
+			    data: {
+			        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+			        datasets: [{
+			            label: '# of Votes',
+			            data: [12, 19, 3, 5, 2, 3],
+			            backgroundColor: [
+			                'rgba(255, 99, 132, 0.2)',
+			                'rgba(54, 162, 235, 0.2)',
+			                'rgba(255, 206, 86, 0.2)',
+			                'rgba(75, 192, 192, 0.2)',
+			                'rgba(153, 102, 255, 0.2)',
+			                'rgba(255, 159, 64, 0.2)'
+			            ],
+			            borderColor: [
+			                'rgba(255, 99, 132, 1)',
+			                'rgba(54, 162, 235, 1)',
+			                'rgba(255, 206, 86, 1)',
+			                'rgba(75, 192, 192, 1)',
+			                'rgba(153, 102, 255, 1)',
+			                'rgba(255, 159, 64, 1)'
+			            ],
+			            borderWidth: 1
+			        }]
+			    },
+			    options: {
+			        scales: {
+			            yAxes: [{
+			                ticks: {
+			                    beginAtZero: true
+			                }
+			            }]
+			        }
+			    }
+			});

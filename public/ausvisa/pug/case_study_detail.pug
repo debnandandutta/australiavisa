@@ -1,0 +1,316 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header.header-style2.pink
+			.top-nav.top-nav-style2
+				.azir-container
+					.row.align-items-center
+						.col-12.col-lg-6
+							.top-nav_left
+								p.notification Welcome to New York Office
+						.col-12.col-lg-6
+							.top-nav_right.text-lg-right 
+								.language.inline-block
+									a(href="#").select
+										.flag.inline-block
+											img(src="assets/images/homepage1/flag.png", alt="flag")
+										|English
+									.options-box
+										ul
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Vietnamese
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Chinese
+								.social.inline-block
+									span Follow:
+									a(href="https://www.facebook.com/").fab.fa-facebook-f
+									a(href="https://twitter.com/").fab.fa-twitter
+									a(href="https://www.invisionapp.com/").fab.fa-invision
+			.header
+				.header-middle
+					.azir-container
+						.row.align-items-center
+							.col-11.col-lg-3
+								a(href="index.html").logo
+									img(src="assets/images/logo-pink-2.png", alt="logo")
+							.col-1.col-lg-9
+								.website-info
+									.info-block
+										.info-icon
+											i.fas.fa-phone-alt
+										.info-content
+											p.light-title Call us:
+											h6.main-title 001-1234-8888
+									.info-block
+										.info-icon
+											i.fas.fa-map-marker-alt
+										.info-content
+											p.light-title Office Address:
+											h6.main-title 350 5th Ave, New York
+									.info-block
+										.info-icon
+											i.far.fa-clock
+										.info-content
+											p.light-title Open Time:
+											h6.main-title Mon-Fri: 08:00 - 19:00
+				.header-bottom
+					.azir-container
+						.row.align-items-center.justify-content-end
+							.col-1.col-lg-8
+								.navigation
+									ul
+										li.navigtion-item
+											a.navigation-link(href="index.html") Home
+											i.submenu-opener
+											.dropdown_menu
+												include base/homepages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") About
+											i.submenu-opener
+											.dropdown_menu
+												include base/about_links.pug
+										li.navigtion-item
+											a.navigation-link(href="services_1.html") Services
+											i.submenu-opener
+											.dropdown_menu
+												include base/services_links.pug
+										li.navigtion-item.active
+											a.navigation-link(href="case_studies.html") Case Studies
+											i.submenu-opener
+											.dropdown_menu
+												include base/case_study_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") Insight
+											i.submenu-opener
+											.dropdown_menu
+												include base/insights_links.pug
+										li.navigtion-item
+											a.navigation-link(href="#") Pages
+											i.submenu-opener
+											.dropdown_menu
+												include base/pages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="contact.html") Contact
+							.col-11.col-lg-4
+								.page-function_block.d-flex.align-items-center.justify-content-end
+									.page-function
+										.function-btn.inline-block
+											a(href="#")#search
+												i.icon_search
+										.function-btn.inline-block
+											a(href="#")#cart
+												i.icon_bag_alt
+										.function-btn.inline-block
+											a(href="#")#open-menu-sidebar
+												i.icon_menu
+									a.btn.btn-pink(href="services_1.html") Get a quote
+		.page-header_parallax(style="background-image: url('assets/images/pages/case-study/bg.png')")
+			.azir-container
+				h1.h1.mb-25 Free Advertising For Your <br> Online Business
+				p.p-16.color-pink Tuesday, 15 May 2019
+		section.case-study
+			.azir-container
+				.case-study_detail
+					h1.h1.mb-20 Project Infomation
+					.row
+						.col-12.col-sm-6.col-md-8.col-lg-9
+							p.p-16.mb-15 Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make your business recognizable and earn more sales of course you need to come up with attractive prints that will make you stand out.
+							p.p-16.mb-60 One way to announce or promote a certain new product or special events is perhaps through using of vinyl banners. Large or small size of printing these vinyl banners are can be able to print and in many types of weather it can hold up extremely well.
+						.col-12.col-sm-6.col-md-4.col-lg-3
+							.info-block
+								p Categories:
+									span Business
+								p Date:
+									span 05 July, 2019
+								p Client:
+									span Azir
+						.col-12.col-sm-6
+							img.mb-30.img-fluid(src="assets/images/pages/case-study/img-1.png", alt="case study imnage")
+						.col-12.col-sm-6
+							img.mb-60.img-fluid(src="assets/images/pages/case-study/img-2.png", alt="case study imnage")
+						.col-12
+							.solution
+								h3.mb-15.case-study--title The Solution
+								p.p-16.mb-30 Sometimes this is the irony of promoting your businesses products and services, because for a fact that you want to make your business recognizable and earn more sales of course you need to come up with attractive prints that will make you stand out.
+								h3.case-study--small-title Advertising Internet Online Opportunities To Explore
+								p.mb-10.p-16 They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places nowadays you can find billboards of just about every product there is in the market. No matter how you see it, billboard advertising is on the rise. If newspaper advertising lasts only for a day and a television advertisement last for only about forty seconds, billboard adverting last 24/7. Billboards can connect easily with potential markets because more people are mobile nowadays.
+								p.mb-30.p-16 Billboards can connect easily with potential markets because more people are mobile nowadays – referring to the increasing number of commuters and more time spent outside of the house.
+								h3.case-study--small-title Trade Show Promotions
+								p.mb-60.p-16 Advances in technology have also made billboards more cost effective. Advances in digital printing have also allowed billboards to be printed cheaply and quickly on canvas. Lately, billboards have been getting pocket-friendly as well.
+						.col-12.col-md-6
+							.planning
+								h3.mb-15.case-study--title Strategy & Planning
+								p.mb-30.p-16 Mainly looking for cheap brochure printing services can be easily attained through the following:
+								ul.ul-16
+									li 1.  Referrals – by simply seeking. 
+									li 2.  Televisions and newspapers.
+									li 3.  Online services – made by technology.
+									li 4.  Aenean vel odio posuere ex blandit suscipit.
+									li 5.  Quisque lobortis dui ac cursus cursus.
+						.col-12.col-md-6
+							h3.mb-15.case-study--title Stats & Charts
+							.chart
+								<canvas id="myChart" width="400" height="200"></canvas>
+				section.h3-section4
+					.section-header-style-1.text-center
+						h1.h1 FAQ'S & Testimonoals
+					.layout-2col-lc
+						.row.no-gutters
+							.col-12.col-md-6
+								.layout-2col-lc_left
+									.faqs-accordion#accordion
+										h3.accordion-section.active.faqs-question 
+											span How we can help you?
+										p.faq-answer I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal.
+										h3.accordion-section.faqs-question 
+											span What does Zano Consulting do?
+										p.faq-answer I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. 
+										h3.accordion-section.faqs-question 
+											span What industries do you specialize in?
+										p.faq-answer I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. 		
+										h3.accordion-section.faqs-question 
+											span How long does it take?
+										p.faq-answer I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. 		
+										h3.accordion-section.faqs-question 
+											span Do we really need a business plan?
+										p.faq-answer I want to talk about to things that are quite important to me. There are love and one my personal inadequacies. The thing is that I’m quite fond of love, I think that it’s a pretty all right deal. 			
+							.col-12.col-md-6
+								.layout-2col-lc_right
+									.h2-section3
+										.counselor-wrapper
+											.counselor-block
+												.counselor
+													img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+													.counselor-detail
+														h5 Maud Salazar
+														p.color-pink CEO DEERCREATIVE
+												q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+											.counselor-block
+												.counselor
+													img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+													.counselor-detail
+														h5 Maud Salazar
+														p.color-pink CEO DEERCREATIVE
+												q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+											.counselor-block
+												.counselor
+													img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+													.counselor-detail
+														h5 Maud Salazar
+														p.color-pink CEO DEERCREATIVE
+												q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+										.counselor_slider-control.pink
+		section.partners
+			.azir-container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer.pink
+			.footer-top
+				.azir-container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo-pink-2.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-pink Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.azir-container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+		include base/footer_links.pug
+		script.
+			var ctx = document.getElementById('myChart');
+			var myChart = new Chart(ctx, {
+			    type: 'bar',
+			    data: {
+			        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+			        datasets: [{
+			            label: '# of Votes',
+			            data: [12, 19, 3, 5, 2, 3],
+			            backgroundColor: [
+			                'rgba(255, 99, 132, 0.2)',
+			                'rgba(54, 162, 235, 0.2)',
+			                'rgba(255, 206, 86, 0.2)',
+			                'rgba(75, 192, 192, 0.2)',
+			                'rgba(153, 102, 255, 0.2)',
+			                'rgba(255, 159, 64, 0.2)'
+			            ],
+			            borderColor: [
+			                'rgba(255, 99, 132, 1)',
+			                'rgba(54, 162, 235, 1)',
+			                'rgba(255, 206, 86, 1)',
+			                'rgba(75, 192, 192, 1)',
+			                'rgba(153, 102, 255, 1)',
+			                'rgba(255, 159, 64, 1)'
+			            ],
+			            borderWidth: 1
+			        }]
+			    },
+			    options: {
+			        scales: {
+			            yAxes: [{
+			                ticks: {
+			                    beginAtZero: true
+			                }
+			            }]
+			        }
+			    }
+			});

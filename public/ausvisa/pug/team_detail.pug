@@ -1,0 +1,336 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header.header-style2.pink
+			.top-nav.top-nav-style2
+				.azir-container
+					.row.align-items-center
+						.col-12.col-lg-6
+							.top-nav_left
+								p.notification Welcome to New York Office
+						.col-12.col-lg-6
+							.top-nav_right.text-lg-right 
+								.language.inline-block
+									a(href="#").select
+										.flag.inline-block
+											img(src="assets/images/homepage1/flag.png", alt="flag")
+										|English
+									.options-box
+										ul
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Vietnamese
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Chinese
+								.social.inline-block
+									span Follow:
+									a(href="https://www.facebook.com/").fab.fa-facebook-f
+									a(href="https://twitter.com/").fab.fa-twitter
+									a(href="https://www.invisionapp.com/").fab.fa-invision
+			.header
+				.header-middle
+					.azir-container
+						.row.align-items-center
+							.col-11.col-lg-3
+								a(href="index.html").logo
+									img(src="assets/images/logo-pink-2.png", alt="logo")
+							.col-1.col-lg-9
+								.website-info
+									.info-block
+										.info-icon
+											i.fas.fa-phone-alt
+										.info-content
+											p.light-title Call us:
+											h6.main-title 001-1234-8888
+									.info-block
+										.info-icon
+											i.fas.fa-map-marker-alt
+										.info-content
+											p.light-title Office Address:
+											h6.main-title 350 5th Ave, New York
+									.info-block
+										.info-icon
+											i.far.fa-clock
+										.info-content
+											p.light-title Open Time:
+											h6.main-title Mon-Fri: 08:00 - 19:00
+				.header-bottom
+					.azir-container
+						.row.align-items-center.justify-content-end
+							.col-1.col-lg-8
+								.navigation
+									ul
+										li.navigtion-item
+											a.navigation-link(href="index.html") Home
+											i.submenu-opener
+											.dropdown_menu
+												include base/homepages_links.pug
+										li.navigtion-item.active
+											a.navigation-link(href="about.html") About
+											i.submenu-opener
+											.dropdown_menu
+												include base/about_links.pug
+										li.navigtion-item
+											a.navigation-link(href="services_1.html") Services
+											i.submenu-opener
+											.dropdown_menu
+												include base/services_links.pug
+										li.navigtion-item
+											a.navigation-link(href="case_studies.html") Case Studies
+											i.submenu-opener
+											.dropdown_menu
+												include base/case_study_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") Insight
+											i.submenu-opener
+											.dropdown_menu
+												include base/insights_links.pug
+										li.navigtion-item
+											a.navigation-link(href="#") Pages
+											i.submenu-opener
+											.dropdown_menu
+												include base/pages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="contact.html") Contact
+							.col-11.col-lg-4
+								.page-function_block.d-flex.align-items-center.justify-content-end
+									.page-function
+										.function-btn.inline-block
+											a(href="#")#search
+												i.icon_search
+										.function-btn.inline-block
+											a(href="#")#cart
+												i.icon_bag_alt
+										.function-btn.inline-block
+											a(href="#")#open-menu-sidebar
+												i.icon_menu
+									a.btn.btn-pink(href="services_1.html") Get a quote
+		.page-header_team.text-center
+			.azir-container
+				.content
+					h1.h1 John Smith
+					p.p Business Consulting
+		section.our-team
+			.azir-container
+				.team-detail
+					.row
+						.col-12.col-lg-3
+							.team-detail_sidebar#sidebar
+								.sidebar_section
+									.our-services
+										h3.sidebar-title Our Sevices
+										ul.services-list
+											li
+												a(href="") Strategy & Planning
+											li
+												a(href="") Finance & Restructuring
+											li
+												a(href="") Estate Planning
+											li
+												a(href="") Consumer Markets
+											li
+												a(href="") Taxes & Efficiency
+											li
+												a(href="") Audit & Evaluation
+											li
+												a(href="") Financial Services
+											li
+												a(href="") Communications
+								.sidebar_section
+									.h2-section3
+										.counselor-wrapper
+											.counselor-block
+												.counselor
+													img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+													.counselor-detail
+														h5 Maud Salazar
+														p.color-pink CEO DEERCREATIVE
+												q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+											.counselor-block
+												.counselor
+													img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+													.counselor-detail
+														h5 Maud Salazar
+														p.color-pink CEO DEERCREATIVE
+												q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+											.counselor-block
+												.counselor
+													img.avatar(src="assets/images/homepage2/avatar.png", alt="avatar")
+													.counselor-detail
+														h5 Maud Salazar
+														p.color-pink CEO DEERCREATIVE
+												q.counselors-advice "Airi analysts have done an excellent job presenting the analysis and insights. I am confident in saying that they have helped move our business forward!"
+										.counselor_slider-control.pink
+								.sidebar_section
+									.support-block
+										h3.sidebar-title How Can We Help You?
+										p.p-16 Contact us at the Consultec WP office nearest to you or submit a business inquiry online.
+										a.btn(href="contact.html") Contact Us
+						.col-12.col-lg-9
+							a#sidebar-opener(href="#") 
+								i.icon_menu
+								|Open sidebar
+							.team-detail_content
+								p.p-16.mb-15 Marketers/advertisers usually focus their efforts on the people responsible for making the purchase. In many cases, this is an effective approach but in other cases it can make for a totally useless marketing campaign.
+								p.p-16.mb-30 Virgin Mobile took a more effective approach in marketing their cell phone service by focusing not on the people that would be making the actual purchase, but instead focusing on the influencers of the people making the purchase. To make this campaign work, Virgin developed a viral website called Parental Enlightenment Kit which offers many tips (often fairy funny ones) to convince their parents to purchase a Virgin Mobile phone for them. By enlisting the teenagers Virgin has multiplied the effectiveness of their marketing campaign for 3 reasons:
+								p.p-16.mb-10 1. The teenagers will continually mention the phone/service to their parents until they get it – Virgin’s campaign will continue to work long after the teenager has left the computer.
+								p.p-16.mb-10 2. This approach is exactly the type of thing that spreads virally. As teenagers tell their friends about it, it will increase exponentially in it’s effectiveness.
+								p.p-16.mb-30 3. They have targeted the most likely decision maker rather than the person responsible for the purchase.
+								p.p-16.mb-30 Companies in other industries have take the same approach and achieved amazing results. For example, Pfizer targeted men with erectile disfunction (a more PC term for impotence) rather than the doctors who would actually prescribe the drug (Viagra) to treat it. You can take the same approach to market your product/service and reap tremendous rewards.
+								h3.service-title.text-center.mb-30 Portfolio
+								section.featured-cases.h3-featured-cases
+									.featured-cases_bottom.featured-cases_bottom__style2
+										.cases-group(data-slick='{"slidesToShow": 3}')
+											.case-block
+												.case-content
+													p.case-date 26 Nov 2019
+													a.case-title(href="blog_detail.html") Make your Wise Pivot
+													p.case-describe How leading companies invest and innovate to harness the power of disruption.
+													a.case-button(href="blog_detail.html")
+														i.arrow_right
+												img(src="assets/images/homepage3/fc-bg-1.png", alt="")
+											.case-block
+												.case-content
+													p.case-date 26 Nov 2019
+													a.case-title(href="blog_detail.html") Becoming a living business
+													p.case-describe How leading companies invest and innovate to harness the power of disruption.
+													a.case-button(href="blog_detail.html")
+														i.arrow_right
+												img(src="assets/images/homepage3/fc-bg-1.png", alt="")
+											.case-block
+												.case-content
+													p.case-date 26 Nov 2019
+													a.case-title(href="blog_detail.html") Make your Wise Pivot
+													p.case-describe How leading companies invest and innovate to harness the power of disruption.
+													a.case-button(href="blog_detail.html")
+														i.arrow_right
+												img(src="assets/images/homepage3/fc-bg-1.png", alt="")
+											.case-block
+												.case-content
+													p.case-date 26 Nov 2019
+													a.case-title(href="blog_detail.html") Make your Wise Pivot
+													p.case-describe How leading companies invest and innovate to harness the power of disruption.
+													a.case-button(href="blog_detail.html")
+														i.arrow_right
+												img(src="assets/images/homepage3/fc-bg-1.png", alt="")
+								.make-appointment
+									h3.service-title.text-center.mb-30 Make an Appointment
+									.appointment-lists
+										.appointment_detail
+											table
+												colgroup
+													col(span='1', style='width: 33.33333%')
+													col(span='1', style='width: 33.33333%')
+													col(span='1', style='width: 33.33333%')
+												tbody
+													tr
+														td.appointment-date 
+															i.far.fa-clock
+															span 08:00 am - 09:00 am
+														td.appointment-slot 1 Slots Available
+														td.appointment-btn
+															a(href="") Book Appointment
+													tr
+														td.appointment-date 
+															i.far.fa-clock
+															span 10:00 am - 11:00 am
+														td.appointment-slot 1 Slots Available
+														td.appointment-btn
+															a(href="") Book Appointment
+													tr
+														td.appointment-date 
+															i.far.fa-clock
+															span 13:00 pm - 14:00 pm
+														td.appointment-slot.disable  0 Slots Available
+														td.appointment-btn
+															a(href="") Book Appointment
+													tr
+														td.appointment-date 
+															i.far.fa-clock
+															span 13:00 pm - 14:00 pm
+														td.appointment-slot 1 Slots Available
+														td.appointment-btn
+															a(href="") Book Appointment
+													tr
+														td.appointment-date 
+															i.far.fa-clock
+															span 15:00 pm - 16:00 pm
+														td.appointment-slot.disable 0 Slots Available
+														td.appointment-btn
+															a(href="") Book Appointment
+
+		section.partners
+			.azir-container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer.pink
+			.footer-top
+				.azir-container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo-pink-2.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-pink Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.azir-container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+		include base/footer_links.pug

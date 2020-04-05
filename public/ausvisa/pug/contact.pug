@@ -1,0 +1,225 @@
+doctype html
+html(lang="en")
+	include base/header.pug
+	body
+		header.header-style2.pink
+			.top-nav.top-nav-style2
+				.azir-container
+					.row.align-items-center
+						.col-12.col-lg-6
+							.top-nav_left
+								p.notification Welcome to New York Office
+						.col-12.col-lg-6
+							.top-nav_right.text-lg-right 
+								.language.inline-block
+									a(href="#").select
+										.flag.inline-block
+											img(src="assets/images/homepage1/flag.png", alt="flag")
+										|English
+									.options-box
+										ul
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Vietnamese
+											li
+												a(href="#").select.option
+													.flag.inline-block
+														img(src="assets/images/homepage1/flag.png", alt="flag")
+													|Chinese
+								.social.inline-block
+									a(href="https://www.facebook.com/").fab.fa-facebook-f
+									a(href="https://twitter.com/").fab.fa-twitter
+									a(href="https://www.invisionapp.com/").fab.fa-invision
+			.header
+				.header-middle
+					.azir-container
+						.row.align-items-center
+							.col-11.col-lg-3
+								a(href="index.html").logo
+									img(src="assets/images/logo-pink-2.png", alt="logo")
+							.col-1.col-lg-9
+								.website-info
+									.info-block
+										.info-icon
+											i.fas.fa-phone-alt
+										.info-content
+											p.light-title Call us:
+											h6.main-title 001-1234-8888
+									.info-block
+										.info-icon
+											i.fas.fa-map-marker-alt
+										.info-content
+											p.light-title Office Address:
+											h6.main-title 350 5th Ave, New York
+									.info-block
+										.info-icon
+											i.far.fa-clock
+										.info-content
+											p.light-title Open Time:
+											h6.main-title Mon-Fri: 08:00 - 19:00
+				.header-bottom
+					.azir-container
+						.row.align-items-center.justify-content-end
+							.col-1.col-lg-8
+								.navigation
+									ul
+										li.navigtion-item
+											a.navigation-link(href="index.html") Home
+											i.submenu-opener
+											.dropdown_menu
+												include base/homepages_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") About
+											i.submenu-opener
+											.dropdown_menu
+												include base/about_links.pug
+										li.navigtion-item
+											a.navigation-link(href="services_1.html") Services
+											i.submenu-opener
+											.dropdown_menu
+												include base/services_links.pug
+										li.navigtion-item
+											a.navigation-link(href="case_studies.html") Case Studies
+											i.submenu-opener
+											.dropdown_menu
+												include base/case_study_links.pug
+										li.navigtion-item
+											a.navigation-link(href="about.html") Insight
+											i.submenu-opener
+											.dropdown_menu
+												include base/insights_links.pug
+										li.navigtion-item
+											a.navigation-link(href="#") Pages
+											i.submenu-opener
+											.dropdown_menu.active
+												include base/pages_links.pug
+										li.navigtion-item.active
+											a.navigation-link(href="contact.html") Contact
+							.col-11.col-lg-4
+								.page-function_block.d-flex.align-items-center.justify-content-end
+									.page-function
+										.function-btn.inline-block
+											a(href="#")#search
+												i.icon_search
+										.function-btn.inline-block
+											a(href="#")#cart
+												i.icon_bag_alt
+										.function-btn.inline-block
+											a(href="#")#open-menu-sidebar
+												i.icon_menu
+									a.btn.btn-pink(href="services_1.html") Get a quote
+		section.contact-us
+			.contact-infomation
+				iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8826.923787362664!2d-118.27754354757262!3d34.03471770929568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20California%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1566525118697!5m2!1svi!2s', width='100%', height='550', frameborder='0', style='border:0;', allowfullscreen='')
+				.azir-container
+					.infomation-box_wrapper
+						.infomation-box
+							h5.mb-20.h5 Infomation
+							ul.ul-16
+								li 
+									i.fas.fa-phone-alt
+									|001-1234-88888
+								li 
+									i.fas.fa-map-marker-alt
+									|350 5th Ave, New York
+								li 
+									i.fas.fa-envelope
+									|info.deerceative@gmail.com
+							h5.mb-20.h5 Opening Hours
+							ul.opening-hours
+								li Monday - Friday
+									span 10:00 - 22:00
+								li Saturday
+									span 10:00 - 17:00
+								li Sunday
+									span 10:00 - 13:00
+			.contact-content
+				.azir-container
+					.layout-2col-ti
+						.row.align-items-center
+							.col-12.col-md-6
+								.layout-2col-ti_left
+									.contact-content_left
+										.section-header-style-2
+											h1.h1 Let me help you
+											p.p-16 If you have any questions, please fill in the box below, We will reply to you as soon as possible
+											form
+												input.input-form(type="text" placeholder="Name")
+												input.input-form(type="text" placeholder="Phone")
+												input.input-form(type="text" placeholder="Subject")
+												textarea.textarea-form(name="", cols="30", rows="5", placeholder="Message")
+							.col-12.col-md-6
+								.layout-2col-ti_right
+									.contact-content_right
+										img.img-fluid(src="assets/images/pages/approach/illus-1.svg", alt="conact image")
+		section.partners
+			.azir-container
+				.partners-group
+					a.partner(href="#")
+						img(src="assets/images/partner-1.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-2.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-4.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-5.png", alt="partner logo")
+					a.partner(href="#")
+						img(src="assets/images/partner-3.png", alt="partner logo")
+		footer.pink
+			.footer-top
+				.azir-container
+					.row.justify-content-between
+						.col-12.col-lg-4
+							.logo
+								img(src="assets/images/logo-pink-2.png", alt="logo")
+							p.website-introduce For more than 40 years, we’ve been passionate about achieving better results for our clients—results that go beyond financial and are uniquely tailored, pragmatic, holistic and enduring.
+						.col-12.col-sm-6.col-md-5.col-lg-3
+							h5.footer-title Quick link
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="about.html") About
+								li
+									a.footer-link(href="aproach.html") Aproach
+								li
+									a.footer-link(href="our_team.html") People
+								li
+									a.footer-link(href="review.html") Reviews
+								li
+									a.footer-link(href="blog_default.html") Insights
+							ul.footer-links_group.inline-block
+								li
+									a.footer-link(href="services_1.html") Services
+								li
+									a.footer-link(href="services_1.html") Industries
+								li
+									a.footer-link(href="case_study.html") Case Studies
+								li
+									a.footer-link(href="shop.html") Shop
+								li
+									a.footer-link(href="contact.html") Contacts
+
+						.col-12.col-sm-6.col-md-7.col-lg-4
+							h5.footer-title Subscribe to the best creative articles feed.
+							form(action="" method="POST").form-group
+								.input-group
+									input(type="text" placeholder="Your e-mail address" required)
+									button.btn-pink Subcribe
+								label(for="privacy-policy") 
+									input#privacy-policy(type="checkbox")
+									|*I have read the Privacy Policy and agree to its terms.
+			.footer-bottom
+				.azir-container
+					.row.align-items-center
+						.col-8
+							p.copyright @2019 Azir. All rights reserved.
+						.col-4
+							.footer-socials.text-right
+								a(href="https://www.facebook.com/").fab.fa-facebook-f
+								a(href="https://twitter.com/").fab.fa-twitter
+								a(href="https://youtube.com/").fab.fa-youtube
+								a(href="https://www.invisionapp.com/").fab.fa-invision
+		include base/footer_links.pug
